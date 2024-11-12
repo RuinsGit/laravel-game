@@ -1,0 +1,208 @@
+/* Ana Konteyner */
+.konteyner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    /*background-color: #fafafa;*/
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Başlık */
+.konteyner h1, .konteyner h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #c2ccd7;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: slideInLeft 1s ease;
+}
+
+/* Kartlar ve Form Stili */
+.kart {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background-color: #fff;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.kart:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.kart-başlıq {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 15px 15px 0 0;
+    text-transform: uppercase;
+}
+
+.kart-bədən {
+    padding: 40px;
+}
+
+/* Form Elemanları */
+.form-qrup {
+    margin-bottom: 1.5rem;
+}
+
+.form-yarlıq {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.form-nəzarət {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1rem;
+}
+
+.form-nəzarət:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 8px rgba(41, 128, 185, 0.4);
+}
+
+/* Düymə (Button) Stili */
+.btn-blok {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: #2980b9;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #3498db;
+    transform: scale(1.05);
+}
+
+/* Cədvəl Stili */
+.cedvel-cavabdeh {
+    margin-top: 30px;
+    overflow-x: auto;
+}
+
+.cedvel {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.cedvel th, .cedvel td {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    font-size: 1rem;
+}
+
+.başlıq-tünd {
+    background-color: #2980b9;
+    color: #fff;
+    font-weight: bold;
+}
+
+.cedvel td {
+    background-color: #f8f8f8;
+    font-size: 1rem;
+}
+
+.cedvel tr:hover {
+    background-color: #ecf0f1;
+    cursor: pointer;
+}
+
+/* Action Buttons in Table */
+.cedvel td .btn {
+    margin: 0 8px;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-warning {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.btn-warning:hover {
+    background-color: #f1c40f;
+    transform: scale(1.05);
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.cedvel-cavabdeh{
+    border-radius: 12px;
+}
+
+
+.redd{
+    display: flex;
+}
+
+.redakte{
+    width: 70%;
+    text-decoration: none;
+}
+.elave{
+    height: 50px;
+}
+.pro-color{
+    color: #8e8d8d;
+}

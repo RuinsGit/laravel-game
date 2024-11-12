@@ -1,0 +1,90 @@
+/* Genel Konteyner Stili */
+.admin-konteyner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    /*background-color: #f0f2f5;*/
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Başlık Stili */
+.admin-səhifə-başlıq {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #d7cbcb;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Cədvəl Konteyneri */
+.admin-cədvəl-konteyneri {
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-x: auto;
+}
+
+/* Cədvəl Stili */
+.admin-cədvəl {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.admin-cədvəl th, .admin-cədvəl td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.admin-cədvəl th {
+    background-color: #2c3e50;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.admin-cədvəl td {
+    background-color: #fafafa;
+    color: #333;
+}
+
+.admin-cədvəl tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
+/* Silme Butonu */
+.admin-sil-formu button {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.admin-sil-formu button:hover {
+    background-color: #c0392b;
+}
+
+/* Animasyonlar */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.ussil{
+    width: 100%;
+}

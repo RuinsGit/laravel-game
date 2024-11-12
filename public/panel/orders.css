@@ -1,0 +1,108 @@
+/* Genel Konteyner Stili */
+.konteyner-3 {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    /*background-color: #f9f9f9;*/
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Başlık Stili */
+.səhifə-başlıq {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #e0e6ed;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    animation: slideInLeft 1s ease;
+}
+
+/* Cədvəl Konteyneri */
+.cədvəl-konteyneri {
+    margin-top: 20px;
+    overflow-x: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Cədvəl Stili */
+.cədvəl {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.cədvəl th, .cədvəl td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.cədvəl th {
+    background-color: #2980b9;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cədvəl td {
+    background-color: #fafafa;
+    color: #333;
+}
+
+.cədvəl tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
+/* Status Stili */
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #fff;
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+.status.pending {
+    background-color: #f39c12;
+}
+
+.status.completed {
+    background-color: #27ae60;
+}
+
+.status.cancelled {
+    background-color: #e74c3c;
+}
+
+/* Animasyonlar */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
